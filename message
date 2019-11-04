@@ -1,0 +1,12 @@
+/**
+ * 返回成功值
+ */
+function success($message=NULL,$data=NULL){
+    return array('status'=>200,'message'=>$message,'data'=>$data);
+}
+/**
+ * 返回提示值
+ */
+function fail($message=NULL,$data=NULL){
+    return array('status'=>201,'message'=>$message,'data'=>$data);
+}
